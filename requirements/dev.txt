@@ -27,7 +27,7 @@ django==2.2.24
     #   djangorestframework
     #   edx-django-utils
     #   edx-i18n-tools
-    #   jsonfield2
+    #   jsonfield
 django-config-models==2.2.0
     # via -r requirements/base.txt
 django-crum==0.7.9
@@ -44,7 +44,7 @@ djangorestframework==3.12.4
     # via
     #   -r requirements/base.txt
     #   django-config-models
-edx-django-utils==4.2.0
+edx-django-utils==4.3.0
     # via
     #   -r requirements/base.txt
     #   django-config-models
@@ -64,7 +64,7 @@ idna==3.2
     # via
     #   -r requirements/base.txt
     #   requests
-jsonfield2==3.0.3
+jsonfield==3.1.0
     # via -r requirements/base.txt
 lazy==1.4
     # via -r requirements/base.txt
@@ -72,7 +72,7 @@ lxml==4.6.3
     # via
     #   -r requirements/base.txt
     #   xblock
-mako==1.1.4
+mako==1.1.5
     # via
     #   -r requirements/base.txt
     #   xblock-utils
@@ -138,7 +138,7 @@ requests==2.26.0
     # via
     #   -r requirements/base.txt
     #   pyjwkest
-simplejson==3.17.3
+simplejson==3.17.5
     # via
     #   -r requirements/base.txt
     #   xblock-utils
@@ -154,7 +154,7 @@ sqlparse==0.4.1
     # via
     #   -r requirements/base.txt
     #   django
-stevedore==3.3.0
+stevedore==3.4.0
     # via
     #   -r requirements/base.txt
     #   edx-django-utils

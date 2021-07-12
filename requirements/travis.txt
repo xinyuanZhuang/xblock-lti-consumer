@@ -21,11 +21,11 @@ bleach==4.0.0
     # via
     #   -r requirements/test.txt
     #   readme-renderer
-boto3==1.18.15
+boto3==1.18.27
     # via
     #   -r requirements/test.txt
     #   fs-s3fs
-botocore==1.21.15
+botocore==1.21.27
     # via
     #   -r requirements/test.txt
     #   boto3
@@ -34,10 +34,6 @@ certifi==2021.5.30
     # via
     #   -r requirements/test.txt
     #   requests
-cffi==1.14.6
-    # via
-    #   -r requirements/test.txt
-    #   cryptography
 charset-normalizer==2.0.4
     # via
     #   -r requirements/test.txt
@@ -66,10 +62,6 @@ coverage==5.5
     #   coveralls
 coveralls==3.2.0
     # via -r requirements/test.txt
-cryptography==3.4.7
-    # via
-    #   -r requirements/test.txt
-    #   secretstorage
 ddt==1.4.2
     # via -r requirements/test.txt
 distlib==0.3.2
@@ -87,7 +79,7 @@ django==2.2.24
     #   djangorestframework
     #   edx-django-utils
     #   edx-lint
-    #   jsonfield2
+    #   jsonfield
     #   xblock-sdk
 django-config-models==2.2.0
     # via
@@ -118,7 +110,7 @@ docutils==0.17.1
     # via
     #   -r requirements/test.txt
     #   readme-renderer
-edx-django-utils==4.2.0
+edx-django-utils==4.3.0
     # via
     #   -r requirements/test.txt
     #   django-config-models
@@ -149,7 +141,7 @@ idna==3.2
     # via
     #   -r requirements/test.txt
     #   requests
-importlib-metadata==4.6.3
+importlib-metadata==4.6.4
     # via
     #   -r requirements/test.txt
     #   keyring
@@ -158,11 +150,6 @@ isort==5.9.3
     # via
     #   -r requirements/test.txt
     #   pylint
-jeepney==0.7.1
-    # via
-    #   -r requirements/test.txt
-    #   keyring
-    #   secretstorage
 jinja2==3.0.1
     # via
     #   -r requirements/test.txt
@@ -172,11 +159,9 @@ jmespath==0.10.0
     #   -r requirements/test.txt
     #   boto3
     #   botocore
-jsonfield2==3.0.3
-    # via
-    #   -c requirements/constraints.txt
-    #   -r requirements/test.txt
-keyring==23.0.1
+jsonfield==3.1.0
+    # via -r requirements/test.txt
+keyring==23.1.0
     # via
     #   -r requirements/test.txt
     #   twine
@@ -190,7 +175,7 @@ lxml==4.6.3
     # via
     #   -r requirements/test.txt
     #   xblock
-mako==1.1.4
+mako==1.1.5
     # via
     #   -r requirements/test.txt
     #   xblock-utils
@@ -228,6 +213,7 @@ pkginfo==1.7.1
     #   twine
 platformdirs==2.2.0
     # via
+    #   -r requirements/test.txt
     #   -r requirements/tox.txt
     #   virtualenv
 pluggy==0.13.1
@@ -244,15 +230,11 @@ py==1.10.0
     #   tox
 pycodestyle==2.7.0
     # via -r requirements/test.txt
-pycparser==2.20
-    # via
-    #   -r requirements/test.txt
-    #   cffi
 pycryptodomex==3.10.1
     # via
     #   -r requirements/test.txt
     #   pyjwkest
-pygments==2.9.0
+pygments==2.10.0
     # via
     #   -r requirements/test.txt
     #   readme-renderer
@@ -330,11 +312,7 @@ s3transfer==0.5.0
     # via
     #   -r requirements/test.txt
     #   boto3
-secretstorage==3.3.1
-    # via
-    #   -r requirements/test.txt
-    #   keyring
-simplejson==3.17.3
+simplejson==3.17.5
     # via
     #   -r requirements/test.txt
     #   xblock-utils
@@ -355,7 +333,7 @@ sqlparse==0.4.1
     # via
     #   -r requirements/test.txt
     #   django
-stevedore==3.3.0
+stevedore==3.4.0
     # via
     #   -r requirements/test.txt
     #   code-annotations
@@ -371,9 +349,9 @@ toml==0.10.2
     #   -r requirements/tox.txt
     #   pylint
     #   tox
-tox==3.24.1
+tox==3.24.3
     # via -r requirements/tox.txt
-tqdm==4.62.0
+tqdm==4.62.2
     # via
     #   -r requirements/test.txt
     #   twine
@@ -384,7 +362,7 @@ urllib3==1.26.6
     #   -r requirements/test.txt
     #   botocore
     #   requests
-virtualenv==20.7.0
+virtualenv==20.7.2
     # via
     #   -r requirements/tox.txt
     #   tox

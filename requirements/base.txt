@@ -21,7 +21,7 @@ django==2.2.24
     #   django-filter
     #   djangorestframework
     #   edx-django-utils
-    #   jsonfield2
+    #   jsonfield
 django-config-models==2.2.0
     # via
     #   -c requirements/constraints.txt
@@ -36,7 +36,7 @@ djangorestframework==3.12.4
     # via
     #   -c requirements/constraints.txt
     #   django-config-models
-edx-django-utils==4.2.0
+edx-django-utils==4.3.0
     # via django-config-models
 edx-opaque-keys[django]==2.2.2
     # via -r requirements/base.in
@@ -46,17 +46,15 @@ future==0.18.2
     # via pyjwkest
 idna==3.2
     # via requests
-jsonfield2==3.0.3
-    # via
-    #   -c requirements/constraints.txt
-    #   -r requirements/base.in
+jsonfield==3.1.0
+    # via -r requirements/base.in
 lazy==1.4
     # via -r requirements/base.in
 lxml==4.6.3
     # via
     #   -r requirements/base.in
     #   xblock
-mako==1.1.4
+mako==1.1.5
     # via
     #   -r requirements/base.in
     #   xblock-utils
@@ -95,7 +93,7 @@ pyyaml==5.4.1
     # via xblock
 requests==2.26.0
     # via pyjwkest
-simplejson==3.17.3
+simplejson==3.17.5
     # via xblock-utils
 six==1.16.0
     # via
@@ -105,7 +103,7 @@ six==1.16.0
     #   python-dateutil
 sqlparse==0.4.1
     # via django
-stevedore==3.3.0
+stevedore==3.4.0
     # via
     #   edx-django-utils
     #   edx-opaque-keys
