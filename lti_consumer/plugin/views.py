@@ -481,6 +481,20 @@ class LtiNrpsContextMembershipViewSet(viewsets.ReadOnlyModelViewSet):
 
         try:
             data = compat.get_course_members(course_key)
+            user_ids = data.keys()
+            for userid in user_ids:
+                full_name = data[userid]["name"]
+                full_name = full_name.replace(',', ' ')
+                name_list = full_name.rsplit(' ', 1)
+                if(len(name_list) == 1):
+                    name_list.append('')
+                given_name = name_list[0]
+                family_name = name_list[1]
+                data[userid]["given_name"] = given_name
+                if(len(name_list) < 2):
+                    data[userid]["family_name"] = ''
+                else:
+                    data[userid]["family_name"] = family_name
             self.attach_external_user_ids(data)
 
             # build correct format for the serializer
